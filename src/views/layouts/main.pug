@@ -1,0 +1,26 @@
+block vars
+doctype html
+html(lang="ru")
+
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(name='description', content=description)
+		title='Richter Gedeon - ' + pageTitle
+		link(rel='stylesheet', href='/css/main.css', type='text/css')
+		meta(name='csrf-token', content='xxx')#csrf-token
+
+	body
+
+		div.container
+			header
+				a.logo(href="/")
+					img(src="/images/logo.png", alt="logo")
+
+			div.content
+				block content
+			
+
+			footer.footer
+		script(src='/js/bundled.js', type='text/javascript')
