@@ -2,9 +2,66 @@ extends /layouts/main.pug
 
 
 block vars
-	- var pageTitle		= "Главная";
-	- var description 	= "This is a description";
-	- var isIndex = true;
+  - var pageTitle		= "Главная";
+  - var description 	= "This is a description";
+  - var isIndex = true;
 
 block content
-	h1 Welcome
+  .main
+    .slider
+      .slide
+        .slide__img
+          img(src="/images/head_picture.jpg", alt="")
+        .slide__title
+          h1 Оптимальная кардиотерапия
+          .slide__sub Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        a(href="#").btn.btn__more.btn__slider Узнать больше
+    //- Блок лидеров и тем
+    .info__block
+      .leader
+        .leader__photo
+          img(src="/images/doctor.png" alt="")
+        .leader__head Лидер мнений онлайн
+        .leader__name Величайший Константин Константинович
+        .leader__degree Доктор наук кардиологии и еще много чего
+        .lead__ask
+          svg(width="36" height="25" viewBox="0 0 36 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+            path(d="M22.1044 22.5275L32.8819 12.4586L22.2959 2.12717" stroke="#004990" stroke-width="4")
+            path(d="M29.9621 12.4409H2" stroke="#004990" stroke-width="4" stroke-linecap="square")
+      .themes
+        .themes__title Темы обсуждения
+        .theme
+          .theme__name Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor
+        .theme
+          .theme__name Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et dolore magna aliqua?
+        .theme
+          .theme__name Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor
+        .themes__other
+          input(type="text" placeholder="Другие вопросы")
+        .btn.btn__more.themes__more
+          .themes__num +5
+          .themes__text Новых вопросов
+    //- Блок Топ материалов
+    .materials
+      .materials__left
+        .materials__title
+          span Топ материалов
+        .material
+          .material__name Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do et dolore magna aliqua?
+        .material
+          .material__name Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do et dolore magna aliqua?
+        .material
+          .material__name Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do et dolore magna aliqua?
+      .materilas__right
+        .material__info
+          img(src="/images/top_material.jpg", alt="")
+          .material__bigname Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?
+          .material__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?
+        .materials__other
+          | Другие материалы
+          svg(width="36" height="25" viewBox="0 0 36 25" fill="none" xmlns="http://www.w3.org/2000/svg")
+            path(d="M22.1044 22.5275L32.8819 12.4586L22.2959 2.12717" stroke="#ffffff" stroke-width="4")
+            path(d="M29.9621 12.4409H2" stroke="#ffffff" stroke-width="4" stroke-linecap="square")
+        .btn.btn__more.materials__more
+          .themes__num +5
+          .themes__text Новых вопросов
