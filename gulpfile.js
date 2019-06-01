@@ -65,7 +65,7 @@ gulp.task('scripts-dist', function() {
 		.transform(ascjsify, { global: true })
 		.transform("babelify", {
 			global: true,
-			presets: ["es2015"]
+			presets: ["@babel/preset-env"]
 		})
 		.bundle()
 		.pipe(source('bundled.js'))

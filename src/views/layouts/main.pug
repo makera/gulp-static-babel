@@ -15,44 +15,9 @@ html(lang="ru")
 
     div.container
       header.header
-        .header__inner
-          a.logo(href="/")
-            img.logo__img.logo__img--blue(src="/images/logo-blue.png", alt="logo")
-            img.logo__img.logo__img--white(src="/images/logo-white.png", alt="logo")
-          nav.menu
-            a(href="#").active Главная
-            a(href="#") Лидеры мнений
-            a(href="#") Материалы
-            a(href="#") Вопросы
-            a(href="#") Письма
-          .tools
-            .search
-              input(type="text")
-            .measure
-            .user
-              img(src="/images/user.png", alt="user")
 
       div.content
         block content
 
-
       footer.footer
-        .footer__col
-          .copyright
-            | © 2018 Гедеон Рихтер 
-            span.phone тел.: <a href="tel:+74953633950">+7 (495) 363-3950</a>
-            span.email email: <a href="mailto:centr@g-richter.ru">centr@g-richter.ru</a>
-          .policy
-            a(href="#") Соглашение об использования
-            a(href="#") Ограничение ответственности
-        .footer__col
-          .feedback Сообщение о нежелательной реакции:
-          .feedback
-            | Заполните 
-            a(href="#") форму 
-            | или отправьте ее по e-mail:
-            a(href="mailto:mail@gmail.com") mail@gmail.com
-        .footer__logo
-          img(src="/images/logo-bot.png", alt="logo")
-      a(href="#").btn.btn__catalog Каталог препаратоов
     script(src='/js/bundled.js', type='text/javascript')
