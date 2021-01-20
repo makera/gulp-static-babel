@@ -18,7 +18,7 @@
     "browser-sync": "^2.12.8",
     "browserify": "^13.0.1",
     "del": "^2.2.0",
-    "gsap": "^2.0.2",
+    "gsap": "^3.6.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-flatten": "^0.4.0",
